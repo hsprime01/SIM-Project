@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report Incident</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h2>Report an Incident</h2>
+
+<form action="/submit" method="POST">
+
+<label>Name</label><br>
+<input type="text" name="name" required><br><br>
+
+<label>Incident</label><br>
+<input type="text" name="incident" required><br><br>
+
+<label>Location</label><br>
+<input type="text" name="location" required><br><br>
+
+<button type="submit">Submit Report</button>
+
+</form>
+
+</body>
+</html>
